@@ -1,0 +1,194 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00f7ff;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('your-hero-image.jpg') center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px #ff00ff, 0 0 30px #00f7ff;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #00f7ff;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff00ff;
+}
+
+/* Profile, Education, Certifications, Experience, Skills, etc. Sections */
+section {
+    padding: 50px 0;
+    background-color: #222;
+    text-align: center;
+}
+
+section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #00f7ff;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #fff;
+}
+
+/* Contact Section */
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.contact-section form button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #00f7ff;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section form button:hover {
+    background-color: #ff00ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Dark/Light Theme Toggle */
+#toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#toggle-button:hover {
+    transform: scale(1.1);
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+    }
+}
